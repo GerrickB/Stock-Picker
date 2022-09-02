@@ -1,16 +1,9 @@
-def stock_picker(array)
+def stock_picker(prices)
+    prices.each_with_index do |price, day|
+        profit = price - prices[0]
+        puts "Day #{day}: #{price} - Day 0: #{prices[0]} = #{profit}"
+    end
 end
-
-
-
-
-
-
-
-
-
-
-
 
 
 
